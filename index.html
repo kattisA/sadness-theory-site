@@ -1,79 +1,259 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<title>Sadness Theory</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<script src="https://www.w3schools.com/lib/w3.js"></script>
+<html lang="en"><head>
+    <title>Sadness Theory</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {font-family: "Lato", sans-serif}
+        .mySlides {display: none}
+    </style>
+</head>
 <body>
 
-<!-- Navigation (Stays on Top) -->
-<div class="w3-top w3-bar w3-black">
-<a href="#home" class="w3-bar-item w3-button">Home</a>
-<a href="#about" class="w3-bar-item w3-button">About</a>
-<a href="#members" class="w3-bar-item w3-button">Members</a>
-<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+                <a href="#" class="w3-bar-item w3-button">Extras</a>
+                <a href="#" class="w3-bar-item w3-button">Media</a>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
 </div>
 
-<!-- Start Content -->
-<div id="home" class="w3-content">
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
 
-<!-- Slides -->
-<img class="slides" src="img_la.jpg" width="100%">
-<img class="slides" src="img_ny.jpg" width="100%">
-<img class="slides" src="img_ch.jpg" width="100%">
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- Automatic Slideshow Images -->
+    <div class="mySlides w3-display-container w3-center" style="display: none;">
+        <img src="/images/stairs.jpg" style="width:100%" alt="The artist Sadness Theory standing on the stairs">
+    </div>
+    <div class="mySlides w3-display-container w3-center" style="display: block;">
+        <img src="/images/cool.jpg" style="width:100%" alt="The artist Sadness Theory standing against the wall">
+    </div>
+    <div class="mySlides w3-display-container w3-center" style="display: none;">
+        <img src="/images/umbrella.jpg" style="width:100%" alt="The artist Sadness Theory holding an umbrella">
+    </div>
+
+    <!-- The Band Section Beskrivning här: https://docs.google.com/document/d/15gBCBMX_oVx_jaZmTWmZ0InezsReVFcaUPiPajLyLZ4/edit -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+        <h2 class="w3-wide">Sadness Theory</h2>
+        <p class="w3-opacity"><i>Waiting to affect you with my music</i></p>
+        <p class="w3-justify">Sadness Theory is self-composed, melodious singer/songwriter music wishing to affect you with its stories.
+            Sadness Theory started out as a music duo performing together since 2008 and is since 2011 a soloproject,
+            with Kattis singing and playing either the piano or the guitar.
+            Sadness Theory has performed in various venues mainly around Uppsala in Sweden such as local festivals,
+            theme nights and vintage-events. Made of things, released in 2012, was featured by Mary from the LA based
+            blog Along comes Mary, who says:
+        </p>
+        <p class="w3-opacity"><i>
+            I have fallen in-love with their current single, “Made of Things”. ”What do you believe in” she sings,
+            “praying to a Gucci God, who made a bag? What’s on your mind, update yourself before it’s too late.”
+        </i></p>
+        <p class="w3-justify">
+            The first album "Praying to a Gucci God", released on the 6th october 2012, includes ten tracks with
+            the valuable contribution from local artists. 	A common theme in my music is environment, reusing
+            the things we own but also the identity issues that emerge from living in a materialistic society.
+        </p>
+        <p class="w3-justify">
+            So WHO is Kattis? I started singing when I was a child but started composing and playing instruments in my early twenties.
+            I get inspired by the people around me, the world we live in, my everyday stories.
+            Then I sit by the piano or the guitar and express my thoughts and feelings through the lyrics and melodies.
+            Artists that have inspired me a lot in my music are Tori Amos, The Cure and Portishead.
+            Other artists I enjoy and that awaken my creativity are Regina Spektor and Marina and the Diamonds.
+        </p>
+        <p class="w3-justify">
+            Here on my website you can listen to my music, find contact- and gig information and read my lyrics.
+            You will also find some amazing photos on my website thanks to the fantastic photographer Spyros Paloukis.
+            The photos are taken in Brusells, Belgium, at the café Roi de Belges.
+        </p>
+        <div class="w3-row w3-padding-32">
+            <div class="w3-half">
+                <p>Kattis Lejonlid</p>
+                <img src="/images/Kattis.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+            </div>
+        </div>
+    </div>
+
+    <!-- The Memories Section -->
+    <div class="w3-black" id="tour">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">MEMORABLE MOMENTS</h2>
+            <p class="w3-opacity w3-center"><i>Let's go down memory lane!</i></p><br>
+
+            <ul class="w3-ul w3-border w3-white w3-text-grey">
+                <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+                <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+                <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
+            </ul>
+
+            <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+                <div class="w3-third w3-margin-bottom">
+                    <img src="/images/kattis_stretch.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Album release</b></p>
+                        <p class="w3-opacity">2012-10-06</p>
+                        <p>The release of my first album "Praying to a Gucci God".</p>
+                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Learn More</button>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="/images/kattis_sing.jpg" alt="The artist Sadness Theory singing" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Kulturernas Karneval</b></p>
+                        <p class="w3-opacity">2014-05-24</p>
+                        <p>Performing at the festival of Cultures in Uppsala.</p>
+                        <!-- https://sadnesstheory.wordpress.com/2014/05/28/kulturernaskarneval-2014-the-gig/ -->
+                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Learn More</button>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="/images/kattis_kulturnatten.jpeg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Kulturnatten</b></p>
+                        <p class="w3-opacity">2023-09-09</p>
+                        <p>Performing at the festival of Culture Night in Uppsala, the square of FyrisTorg.</p>
+                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ticket Modal -->
+    <div id="ticketModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center w3-padding-32">
+                <span onclick="document.getElementById('ticketModal').style.display='none'" class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+                <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+            </header>
+            <div class="w3-container">
+                <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+                <input class="w3-input w3-border" type="text" placeholder="How many?">
+                <p><label><i class="fa fa-user"></i> Send To</label></p>
+                <input class="w3-input w3-border" type="text" placeholder="Enter email">
+                <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+                <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center">CONTACT</h2>
+        <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+        <div class="w3-row w3-padding-32">
+            <div class="w3-col m6 w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+                <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+                <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+            </div>
+            <div class="w3-col m6">
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required="" name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required="" name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required="" name="Message">
+                    <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/images/legs.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">By <a href="https://github.com/kattisA" target="_blank">Kattis</a></p>
+</footer>
+
 <script>
-w3.slideshow(".slides", 1500);
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 4000);
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var slides = document.getElementsByClassName("mySlides");
+        for (var i = 0; i < slides.length; i++) {
+            var spotifyButton = document.createElement("a");
+            spotifyButton.href = "https://open.spotify.com/artist/3D3CLqnOoNvI4d1whzWtPl";
+            spotifyButton.className = "w3-button w3-black w3-padding-large w3-large";
+            spotifyButton.textContent = "Listen on Spotify";
+
+            var containerDiv = document.createElement("div");
+            containerDiv.className = "w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small";
+            containerDiv.appendChild(spotifyButton);
+
+            slides[i].appendChild(containerDiv);
+        }
+    });
+
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 </script>
 
-<!-- About -->
-<div id="about" class="w3-container w3-padding-32">
-<h1 class="w3-center">The Band</h1>
-<p>This is our band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
 
-<!-- Members -->
-<div id="members" class="w3-container w3-padding-32">
-<h2 class="w3-center">Band Members</h2>
-<div class="w3-row w3-center">
-
-<div class="w3-third">
-<img src="img_bandmember.jpg" alt="Name1" style="width:60%">
-</div>
-
-<div class="w3-third">
-<img src="img_bandmember.jpg" alt="Name2" style="width:60%">
-</div>
-
-<div class="w3-third">
-<img src="img_bandmember.jpg" alt="Name3" style="width:60%">
-</div>
-
-</div>
-</div>
-
-<!-- Contact -->
-<div id="contact" class="w3-container w3-center w3-padding-32">
-<h2 class="w3-wide">CONTACT</h2>
-Chicago, US<br>
-Phone: +00 151515<br>
-Email: mail@mail.com<br>
-<p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-
-<form action="/action_page.php" target="_blank">
-<input class="w3-input" type="text" placeholder="Name" required name="Name">
-<input class="w3-input" type="text" placeholder="Email" required name="Email">
-<input class="w3-input" type="text" placeholder="Message" required name="Message"><br>
-<button class="w3-button w3-black" type="submit">SEND</button>
-</form>
-
-<br>
-<img src="map.jpg" class="w3-image" style="width:100%">
-<p class="w3-center w3-padding">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank">w3.css</a></p>
-</div>
-
-<!-- End Content -->
-</div>
-
-</body>
-</html>
+</body></html>
