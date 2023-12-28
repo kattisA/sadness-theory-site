@@ -18,7 +18,7 @@
         <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
         <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-        <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MEMORIES</a>
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
         <div class="w3-dropdown-hover w3-hide-small">
             <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
@@ -89,7 +89,7 @@
         <div class="w3-row w3-padding-32">
             <div class="w3-half">
                 <p>Kattis Lejonlid</p>
-                <img src="/images/Kattis.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+                <img src="/images/Kattis.jpg" class="w3-round w3-margin-bottom" alt="The artist herself Kattis Lejonlid" style="width:60%">
             </div>
         </div>
     </div>
@@ -100,11 +100,11 @@
             <h2 class="w3-wide w3-center">MEMORABLE MOMENTS</h2>
             <p class="w3-opacity w3-center"><i>Let's go down memory lane!</i></p><br>
 
-            <ul class="w3-ul w3-border w3-white w3-text-grey">
+           <!-- <ul class="w3-ul w3-border w3-white w3-text-grey">
                 <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
                 <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
                 <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
-            </ul>
+            </ul>-->
 
             <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
                 <div class="w3-third w3-margin-bottom">
@@ -113,7 +113,7 @@
                         <p><b>Album release</b></p>
                         <p class="w3-opacity">2012-10-06</p>
                         <p>The release of my first album "Praying to a Gucci God".</p>
-                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Learn More</button>
+                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('releaseModal').style.display='block'">Learn More</button>
                     </div>
                 </div>
                 <div class="w3-third w3-margin-bottom">
@@ -122,8 +122,7 @@
                         <p><b>Kulturernas Karneval</b></p>
                         <p class="w3-opacity">2014-05-24</p>
                         <p>Performing at the festival of Cultures in Uppsala.</p>
-                        <!-- https://sadnesstheory.wordpress.com/2014/05/28/kulturernaskarneval-2014-the-gig/ -->
-                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Learn More</button>
+                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('carnivalModal').style.display='block'">Learn More</button>
                     </div>
                 </div>
                 <div class="w3-third w3-margin-bottom">
@@ -132,28 +131,100 @@
                         <p><b>Kulturnatten</b></p>
                         <p class="w3-opacity">2023-09-09</p>
                         <p>Performing at the festival of Culture Night in Uppsala, the square of FyrisTorg.</p>
-                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Learn More</button>
+                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('kulturnattModal').style.display='block'">Learn More</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Ticket Modal -->
-    <div id="ticketModal" class="w3-modal">
+    <!-- Release Modal -->
+    <div id="releaseModal" class="w3-modal">
         <div class="w3-modal-content w3-animate-top w3-card-4">
-            <header class="w3-container w3-teal w3-center w3-padding-32">
-                <span onclick="document.getElementById('ticketModal').style.display='none'" class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-                <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+            <header class="w3-container w3-sand w3-center w3-padding-32">
+                <span onclick="document.getElementById('releaseModal').style.display='none'" class="w3-button w3-sand w3-xlarge w3-display-topright">×</span>
+                <h2 class="w3-wide">Album Release</h2>
             </header>
             <div class="w3-container">
-                <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-                <input class="w3-input w3-border" type="text" placeholder="How many?">
-                <p><label><i class="fa fa-user"></i> Send To</label></p>
-                <input class="w3-input w3-border" type="text" placeholder="Enter email">
-                <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-                <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-                <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+                <p> The first album "Praying to a Gucci God", released on the
+                    6th october 2012, includes ten tracks with the valuable contribution from local artists.
+                    A common theme in my music is environment, reusing the things we own but also the identity issues
+                    that emerge from living in a materialistic society.</p>
+                <p> The release was celebrated with a gig at a café in Uppsala, called café 018. </p>
+                <img src="/images/spotify_album.png" alt="The album cover of Sadness Theory on Spotify" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-bar ">
+                    <div class="w3-right">
+                        <button class="w3-button w3-pale-red w3-padding-16 w3-section" onclick="document.getElementById('releaseModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                        <a href="https://open.spotify.com/album/6jrMUtMNikwW3trJUpx56T" class="w3-button w3-pale-green w3-padding-16 w3-section">Album link<i class="fa fa-check"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Carnival Modal -->
+    <div id="carnivalModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-sand w3-center w3-padding-32">
+                <span onclick="document.getElementById('carnivalModal').style.display='none'" class="w3-button w3-sand w3-xlarge w3-display-topright">×</span>
+                <h2 class="w3-wide">Carnival of cultures</h2>
+            </header>
+            <div class="w3-container">
+                <p> The carnival of cultures is a music and culture festival that has taken place in Uppsala for several years.
+                    There are a lot of visitors attending the festival to see several artists perform.
+                </p>
+                <p>
+                    Sadness Theory has participated several times and has been much appreciated by the audience.
+                </p>
+                <div class="w3-row w3-padding-32">
+                    <p class="w3-center">From the festival in 2014</p>
+                    <div class="w3-half">
+                        <img src="/images/carnival.jpg" class="w3-round w3-margin-bottom" alt="Sadness Theory plying the guitar" style="width:60%">
+                    </div>
+                    <div class="w3-half">
+                        <img src="/images/carnival2.jpg" class="w3-round w3-margin-bottom" alt="Sadness Theory singing" style="width:60%">
+                    </div>
+                </div>
+                <div class="w3-bar ">
+                    <div class="w3-right">
+                        <button class="w3-button w3-pale-red w3-padding-16 w3-section"
+                                onclick="document.getElementById('ticketModal').style.display='none'">
+                            Close <i class="fa fa-remove"></i></button>
+                        <a href="https://sadnesstheory.wordpress.com/2014/05/28/kulturernaskarneval-2014-the-gig/"
+                           class="w3-button w3-pale-green w3-padding-16 w3-section">Blog post<i class="fa fa-check"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Kulturnatt Modal -->
+    <div id="kulturnattModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-sand w3-center w3-padding-32">
+                <span onclick="document.getElementById('kulturnattModal').style.display='none'" class="w3-button w3-sand w3-xlarge w3-display-topright">×</span>
+                <h2 class="w3-wide">Culture Night</h2>
+            </header>
+            <div class="w3-container">
+                <p> The festival of culture night takes place yearly in September. The local associations have different
+                scenes for various artists to perform.</p>
+                <p>
+                Sadness Theory has performed several times on Culture Night and on different scenes such as Fyristorg,
+                which is a square near the center of the Uppsala City. The latest performance took place in
+                September 2023.
+                </p>
+                <div class="w3-row w3-padding-32 w3-center">
+                    <p class="w3-center">Performing at Fyristorg 2023</p>
+                    <img src="/images/kattis_kulturnatten.jpeg" class="w3-round w3-margin-bottom" alt="Sadness Theory singing and playing the guitar" style="width:60%">
+                    <p class="w3-center">Photo by <i>Patrik Lundin</i></p>
+                </div>
+                <div class="w3-bar ">
+                    <div class="w3-right">
+                        <button class="w3-button w3-pale-red w3-padding-16 w3-section" onclick="document.getElementById('kulturnattModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                        <a href="https://kulturnattenuppsala.se/program/2023/livemusik-pa-fyristorg-kulturtorget/"
+                           class="w3-button w3-pale-green w3-padding-16 w3-section">View program<i class="fa fa-check"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
