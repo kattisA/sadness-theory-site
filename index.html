@@ -17,9 +17,9 @@
     <div class="w3-bar w3-black w3-card">
         <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-        <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
         <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MEMORIES</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+        <a href="#blog" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BLOG</a>
         <div class="w3-dropdown-hover w3-hide-small">
             <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -34,9 +34,9 @@
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
     <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#blog" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BLOG</a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
 </div>
 
@@ -54,9 +54,17 @@
         <img src="/images/umbrella.jpg" style="width:100%" alt="The artist Sadness Theory holding an umbrella">
     </div>
 
-    <!-- The Band Section Beskrivning här: https://docs.google.com/document/d/15gBCBMX_oVx_jaZmTWmZ0InezsReVFcaUPiPajLyLZ4/edit -->
-    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <!-- The About Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
         <h2 class="w3-wide">Sadness Theory</h2>
+        <div class="w3-center w3-opacity w3-xlarge">
+            <a href="https://www.facebook.com/sadnesstheory/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/sadnesstheory/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://soundcloud.com/sadnesstheory"><i class="fa fa-soundcloud w3-hover-opacity"></i></a>
+            <a href="https://pl.pinterest.com/Sadnesstheory/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="https://www.youtube.com/@sadnesstheory"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+            <a href="https://open.spotify.com/album/6jrMUtMNikwW3trJUpx56T"><i class="fa fa-spotify w3-hover-opacity"></i></a>
+        </div>
         <p class="w3-opacity"><i>Waiting to affect you with my music</i></p>
         <p class="w3-justify">Sadness Theory is self-composed, melodious singer/songwriter music wishing to affect you with its stories.
             Sadness Theory started out as a music duo performing together since 2008 and is since 2011 a soloproject,
@@ -89,7 +97,7 @@
         <div class="w3-row w3-padding-32">
             <div class="w3-half">
                 <p>Kattis Lejonlid</p>
-                <img src="/images/Kattis.jpg" class="w3-round w3-margin-bottom" alt="The artist herself Kattis Lejonlid" style="width:60%">
+                <img src="/images/liten_kattis.jpg" class="w3-round w3-margin-bottom" alt="The artist herself Kattis Lejonlid" style="width:60%">
             </div>
         </div>
     </div>
@@ -228,34 +236,18 @@
             </div>
         </div>
     </div>
-
-    <!-- The Contact Section -->
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-        <h2 class="w3-wide w3-center">CONTACT</h2>
-        <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-        <div class="w3-row w3-padding-32">
-            <div class="w3-col m6 w3-large w3-margin-bottom">
-                <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-                <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-                <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-            </div>
-            <div class="w3-col m6">
-                <form action="/action_page.php" target="_blank">
-                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Name" required="" name="Name">
-                        </div>
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Email" required="" name="Email">
-                        </div>
-                    </div>
-                    <input class="w3-input w3-border" type="text" placeholder="Message" required="" name="Message">
-                    <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-                </form>
-            </div>
-        </div>
+    <!-- The Blog Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="blog">
+        <h2 class="w3-wide w3-center">BLOG</h2>
+        <p class="w3-justify">
+            Explore my Wordpress blog to learn more about me, as an artist and person. There are many
+            categories in the blog but these would be the most interesting of them.
+        </p>
+        <div class="w3-tag w3-xxlarge w3-deep-orange w3-margin-right"><a href="https://sadnesstheory.wordpress.com/category/lyrics/">Lyrics</a></div>
+        <div class="w3-tag w3-xxlarge w3-grey w3-margin-right"><a href="https://sadnesstheory.wordpress.com/media/">Media</a></div>
+        <div class="w3-tag w3-xxlarge w3-cyan w3-margin-right"><a href="https://sadnesstheory.wordpress.com/category/music-2/performance/">Performance</a></div>
+        <div class="w3-tag w3-xxlarge w3-deep-orange"><a href="https://sadnesstheory.wordpress.com/category/environmental/">Environmental</a></div>
     </div>
-
     <!-- End Page Content -->
 </div>
 
@@ -264,12 +256,12 @@
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a href="https://www.facebook.com/sadnesstheory/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/sadnesstheory/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://soundcloud.com/sadnesstheory"><i class="fa fa-soundcloud w3-hover-opacity"></i></a>
+    <a href="https://pl.pinterest.com/Sadnesstheory/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/@sadnesstheory"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+    <a href="https://open.spotify.com/album/6jrMUtMNikwW3trJUpx56T"><i class="fa fa-spotify w3-hover-opacity"></i></a>
     <p class="w3-medium">By <a href="https://github.com/kattisA" target="_blank">Kattis</a></p>
 </footer>
 
@@ -295,12 +287,18 @@
         for (var i = 0; i < slides.length; i++) {
             var spotifyButton = document.createElement("a");
             spotifyButton.href = "https://open.spotify.com/artist/3D3CLqnOoNvI4d1whzWtPl";
-            spotifyButton.className = "w3-button w3-black w3-padding-large w3-large";
+            spotifyButton.className = "w3-button w3-black w3-padding-large w3-margin-right w3-large";
             spotifyButton.textContent = "Listen on Spotify";
+
+            var soundcloudButton = document.createElement("a");
+            soundcloudButton.href = "https://soundcloud.com/sadnesstheory";
+            soundcloudButton.className = "w3-button w3-black w3-padding-large w3-large";
+            soundcloudButton.textContent = "Listen on Soundcloud";
 
             var containerDiv = document.createElement("div");
             containerDiv.className = "w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small";
             containerDiv.appendChild(spotifyButton);
+            containerDiv.appendChild(soundcloudButton);
 
             slides[i].appendChild(containerDiv);
         }
